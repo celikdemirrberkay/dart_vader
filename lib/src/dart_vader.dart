@@ -1,0 +1,77 @@
+import 'dart:io';
+import 'package:flutter/material.dart';
+
+extension DartVader on BuildContext {
+  /// Returns screen widht info
+  double get screenWidht => MediaQuery.of(this).size.width;
+
+  /// Returns screen height info
+  double get screenHeight => MediaQuery.of(this).size.height;
+
+  /// Text theme shortcut
+  TextTheme get appTextTheme => Theme.of(this).textTheme;
+
+  /// Theme.of(context).textTheme.bodySmall shortcut
+  TextStyle? get bodySmall => Theme.of(this).textTheme.bodySmall;
+
+  /// Theme.of(context).textTheme.bodyMedium shortcut
+  TextStyle? get bodyMedium => Theme.of(this).textTheme.bodyMedium;
+
+  /// Theme.of(context).textTheme.bodyLarge shortcut
+  TextStyle? get bodyLarge => Theme.of(this).textTheme.bodyLarge;
+
+  /// Font weight w300 shortcut
+  FontWeight get fontWeight300 => FontWeight.w300;
+
+  /// Font weight bold shortcut
+  FontWeight get fontWeightBold => FontWeight.bold;
+
+  /// Spacer with flex value.
+  Spacer spacerWithFlex({required int flex}) => Spacer(flex: flex);
+
+  /// Sized box with size (width and height)
+  SizedBox sizedBoxWithSize({double? height, double? width}) => SizedBox(height: height, width: width);
+
+  /// Low symmetric padding value
+  EdgeInsets get symmetricPaddingLow => EdgeInsets.symmetric(horizontal: screenWidht * 0.03, vertical: screenHeight * 0.01);
+
+  /// Medium symmetric padding value
+  EdgeInsets get symmetricPaddingMedium => EdgeInsets.symmetric(horizontal: screenWidht * 0.05, vertical: screenWidht * 0.03);
+
+  /// High symmetric padding value
+  EdgeInsets get symmetricPaddingHigh => EdgeInsets.symmetric(horizontal: screenWidht * 0.1, vertical: screenWidht * 0.05);
+
+  /// Custom padding. You can give horizontal and vertical value.
+  EdgeInsets vaderCustomSymmmetricPadding({double vertical = 0, double horizontal = 0}) =>
+      EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical);
+
+  /// context.vaderCircularBorderRadius(10) returns BorderRadius.circular(10)
+  BorderRadius vaderCircularBorderRadius({required double radius}) => BorderRadius.circular(radius);
+
+  /// If platform is Android return true else false.
+  bool get isAndroid => Platform.isAndroid;
+
+  /// If platform is iOS return true else false.
+  bool get isIOS => Platform.isIOS;
+
+  /// If platform is Windows return true else false.
+  bool get isWindows => Platform.isWindows;
+
+  /// If platform is MacOS return true else false.
+  bool get isMacos => Platform.isMacOS;
+
+  /// If platform is Fuchsia return true else false.
+  bool get isFuchsia => Platform.isFuchsia;
+
+  /// If platform is Linux return true else false.
+  bool get isLinux => Platform.isLinux;
+
+  /// Returns current date time.
+  DateTime get currentTime => DateTime.now();
+
+  /// Returns zero duration.
+  Duration get zeroDuration => Duration.zero;
+
+  /// Returns one second duration.
+  Duration get oneSecondDuration => const Duration(seconds: 1);
+}
