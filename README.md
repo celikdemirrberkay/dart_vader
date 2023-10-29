@@ -24,6 +24,9 @@ Text(
 ```
 ## License
 
+[MIT](https://github.com/Dart-Code/Flutter/blob/master/LICENSE)
 
 ## Contributor
 GitHub : https://github.com/celikdemirrberkay
+
+
