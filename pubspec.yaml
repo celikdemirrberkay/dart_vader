@@ -1,7 +1,7 @@
 name: dart_vader
-description: Extension for your projects
-version: 0.0.1
-homepage: https://github.com/celikdemirrberkay/vader
+description: Extension for your projects. It provides some shortcuts that you can access via context
+version: 0.0.3
+homepage: https://github.com/celikdemirrberkay/dart_vader
 
 environment:
   sdk: '>=3.1.5 <4.0.0'
@@ -14,7 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

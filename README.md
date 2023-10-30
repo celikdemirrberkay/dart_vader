@@ -6,7 +6,7 @@ Instead of writing the same codes over and over again for a long time, access th
 
 ```yaml
 dependencies:
-  vader: 0.0.1
+  vader: <latest_version>
 ```
 
 
