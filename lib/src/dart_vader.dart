@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 extension DartVader on BuildContext {
   /// Returns screen widht info
@@ -32,30 +33,32 @@ extension DartVader on BuildContext {
   /// Theme.of(context).textTheme.headlineLarge shortcut
   TextStyle? get headlineLarge => Theme.of(this).textTheme.headlineLarge;
 
+  /// Font weight normal shortcut
+  Type get fontWeightInstance => FontWeight;
+
   /// Font weight w300 shortcut
   FontWeight get fontWeight300 => FontWeight.w300;
 
   /// Font weight bold shortcut
   FontWeight get fontWeightBold => FontWeight.bold;
 
+  /// Font weight w700 shortcut
+  FontWeight get fontWeight700 => FontWeight.w700;
+
   /// Spacer with flex value.
   Spacer spacerWithFlex({required int flex}) => Spacer(flex: flex);
 
   /// Sized box with size (width and height)
-  SizedBox sizedBoxWithSize({double? height, double? width}) =>
-      SizedBox(height: height, width: width);
+  SizedBox sizedBoxWithSize({double? height, double? width}) => SizedBox(height: height, width: width);
 
   /// Low symmetric padding value
-  EdgeInsets get symmetricPaddingLow => EdgeInsets.symmetric(
-      horizontal: screenWidht * 0.03, vertical: screenHeight * 0.01);
+  EdgeInsets get symmetricPaddingLow => EdgeInsets.symmetric(horizontal: screenWidht * 0.03, vertical: screenHeight * 0.01);
 
   /// Medium symmetric padding value
-  EdgeInsets get symmetricPaddingMedium => EdgeInsets.symmetric(
-      horizontal: screenWidht * 0.05, vertical: screenWidht * 0.03);
+  EdgeInsets get symmetricPaddingMedium => EdgeInsets.symmetric(horizontal: screenWidht * 0.05, vertical: screenWidht * 0.03);
 
   /// High symmetric padding value
-  EdgeInsets get symmetricPaddingHigh => EdgeInsets.symmetric(
-      horizontal: screenWidht * 0.1, vertical: screenWidht * 0.05);
+  EdgeInsets get symmetricPaddingHigh => EdgeInsets.symmetric(horizontal: screenWidht * 0.1, vertical: screenWidht * 0.05);
 
   /// Dynamic width
   double dynamicWidth(double val) => screenWidht * val;
@@ -64,13 +67,14 @@ extension DartVader on BuildContext {
   double dynamicHeight(double val) => screenHeight * val;
 
   /// Custom padding. You can give horizontal and vertical value.
-  EdgeInsets vaderCustomSymmmetricPadding(
-          {double vertical = 0, double horizontal = 0}) =>
+  EdgeInsets customSymmmetricPadding({
+    double vertical = 0,
+    double horizontal = 0,
+  }) =>
       EdgeInsets.symmetric(horizontal: horizontal, vertical: vertical);
 
   /// context.vaderCircularBorderRadius(10) returns BorderRadius.circular(10)
-  BorderRadius circularBorderRadius({required double radius}) =>
-      BorderRadius.circular(radius);
+  BorderRadius circularBorderRadius({required double radius}) => BorderRadius.circular(radius);
 
   /// If platform is Android return true else false.
   bool get isAndroid => Platform.isAndroid;
@@ -101,4 +105,10 @@ extension DartVader on BuildContext {
 
   /// Shortcut of FocusScope.of(context) you can use like -> context.focusScope.unfocus()
   FocusScopeNode get focusScope => FocusScope.of(this);
+
+  /// Shortcut of TextAlign.center
+  TextAlign get textAlignCenter => TextAlign.center;
+
+  /// Google Font shortcut
+  Type get googleFonts => GoogleFonts;
 }

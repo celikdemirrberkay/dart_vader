@@ -1,6 +1,6 @@
 name: dart_vader
 description: Extension for your projects. It provides some shortcuts that you can access via context
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/celikdemirrberkay/dart_vader
 
 environment:
@@ -11,8 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  #MARK: Use for cache
-  shared_preferences: ^2.2.2
+  # Fonts
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:
