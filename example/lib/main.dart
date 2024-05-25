@@ -54,8 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               Text(
                 'You have pushed the button this many times:',
-                style: context
-                    .appTextTheme.bodyMedium, // ------------------> As you can see this is a shortcut for Theme.of(context).textTheme.bodyMedium
+                style: context.appTextTheme
+                    .bodyMedium, // ------------------> As you can see this is a shortcut for Theme.of(context).textTheme.bodyMedium
               ),
               Text(
                 '$_counter',

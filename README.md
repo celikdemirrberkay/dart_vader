@@ -13,13 +13,13 @@ dependencies:
 ## Samples
 
 ```dart
-bool isIOS = context.isIOS;
+bool isIOS = context.isIOS; // Returns true if the platform is iOS
 ```
 
 ```dart
 Text(
     'You would be wise to surrender',
-    style: context.bodyLarge //Instead of Theme.of(context).bodyLarge
+    style: context.bodyLarge // Instead of Theme.of(context).bodyLarge
 );
 ```
 ## License

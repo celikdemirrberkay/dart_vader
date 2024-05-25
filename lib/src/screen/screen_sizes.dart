@@ -8,14 +8,14 @@ class ScreenSizes {
   BuildContext context;
 
   /// Returns screen widht info
-  double get screenWidht => MediaQuery.of(context).size.width;
+  double get width => MediaQuery.of(context).size.width;
 
   /// Returns screen height info
-  double get screenHeight => MediaQuery.of(context).size.height;
+  double get height => MediaQuery.of(context).size.height;
 
   /// Dynamic width
-  double dynamicWidth(double val) => screenWidht * val;
+  double dynamicWidth(double val) => width * val;
 
   /// Dynamic height
-  double dynamicHeight(double val) => screenHeight * val;
+  double dynamicHeight(double val) => height * val;
 }

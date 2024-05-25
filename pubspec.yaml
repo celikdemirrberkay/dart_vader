@@ -1,6 +1,6 @@
 name: dart_vader
 description: Extension for your projects. It provides some shortcuts that you can access via context
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/celikdemirrberkay/dart_vader
 
 environment:
